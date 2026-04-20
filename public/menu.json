@@ -1,55 +1,208 @@
 {
-  "Dim Sum & Starters": {
-    "Steamed Har Gow": 280,
-    "Siu Mai (Pork & Prawn)": 300,
-    "Crispy Spring Rolls": 220,
-    "Prawn Toast": 260,
-    "Salt & Pepper Squid": 320,
-    "Crispy Wontons": 200,
-    "Edamame with Sea Salt": 150,
-    "Chicken Satay Skewers": 280
-  },
-  "Soups": {
-    "Hot & Sour Soup": 180,
-    "Sweet Corn Chicken Soup": 180,
-    "Wonton Soup": 200,
-    "Tom Yum (Veg / Chicken / Prawn)": 220,
-    "Dragon Fire Broth": 250
-  },
-  "Wok Tossed Mains": {
-    "Kung Pao Chicken": 380,
-    "General Tso's Chicken": 380,
-    "Honey Chilli Chicken": 360,
-    "Szechuan Beef": 450,
-    "Dragon Style Prawn": 520,
-    "Crispy Tofu in Black Bean Sauce": 320,
-    "Mixed Vegetables in Oyster Sauce": 280,
-    "Mapo Tofu": 300
-  },
-  "Noodles & Rice": {
-    "Dragon Fried Rice": 280,
-    "Yangzhou Fried Rice": 300,
-    "Hakka Noodles (Veg / Chicken / Prawn)": 260,
-    "Chicken Chow Mein": 320,
-    "Singapore Rice Noodles": 340,
-    "Pad Thai": 360,
-    "Black Bean Garlic Noodles": 300
-  },
-  "Dim Sum Desserts": {
-    "Sesame Balls (3 pcs)": 180,
-    "Mango Pudding": 160,
-    "Egg Custard Tarts (2 pcs)": 140,
-    "Coconut Pandan Jelly": 140,
-    "Toffee Banana": 180
-  },
-  "Cocktails & Drinks": {
-    "Dragon's Breath Cocktail": 420,
-    "Lychee Martini": 380,
-    "Jasmine Iced Tea": 180,
-    "Mandarin Spritz": 400,
-    "House Wine (Glass)": 350,
-    "Craft Beer": 280,
-    "Fresh Lime Soda": 100,
-    "Iced Green Tea": 120
-  }
+  "categories": [
+    {
+      "name": "Noodles",
+      "type": "variant",
+      "variants": ["veg", "egg", "chicken", "prawn", "mix"],
+      "items": [
+        {
+          "name": "Veg Hakka Noodles",
+          "description": "Stir-fried noodles with vegetables",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Szechuan Noodles",
+          "description": "Spicy noodles with szechuan flavour",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Dan Min Noodles",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Mei Goreng",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Chiang Mai Noodles",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Kway Teow",
+          "prices": { "veg": 239, "egg": 245, "chicken": 249, "prawn": 259, "mix": 269 }
+        },
+        {
+          "name": "Pad Thai",
+          "prices": { "veg": 259, "egg": 265, "chicken": 269, "prawn": 279, "mix": 289 }
+        },
+        {
+          "name": "Haocchi Noodles",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Malaka Noodles",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Spicy Corriander Noodles",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Thukpa",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        }
+      ]
+    },
+
+    {
+      "name": "Rice",
+      "type": "variant",
+      "variants": ["veg", "egg", "chicken", "prawn", "mix"],
+      "items": [
+        {
+          "name": "Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Butter Garlic Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Szechuan Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Shanghai Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Nasi Goreng",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Thai Chilli Basil Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Haocchi Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Fortune Fried Rice",
+          "prices": { "veg": 230, "egg": 235, "chicken": 240, "prawn": 250, "mix": 260 }
+        },
+        {
+          "name": "Leefu Fried Rice",
+          "description": "Fried rice with vegetables & chicken",
+          "price": 260
+        },
+        {
+          "name": "Plain Steam Rice",
+          "price": 110
+        }
+      ]
+    },
+
+    {
+      "name": "Soups",
+      "type": "variant",
+      "variants": ["veg", "chicken", "prawn", "mix"],
+      "items": [
+        {
+          "name": "Sweetcorn Soup",
+          "prices": { "veg": 190, "chicken": 200, "prawn": 210, "mix": 220 }
+        },
+        {
+          "name": "Hot & Sour Soup",
+          "prices": { "veg": 190, "chicken": 200, "prawn": 210, "mix": 220 }
+        },
+        {
+          "name": "Lung Fung Soup",
+          "prices": { "veg": 190, "chicken": 200, "prawn": 210, "mix": 220 }
+        },
+        {
+          "name": "Manchow Soup",
+          "prices": { "veg": 190, "chicken": 200, "prawn": 210, "mix": 220 }
+        },
+        {
+          "name": "Tom Kha Soup",
+          "prices": { "veg": 190, "chicken": 200, "prawn": 210, "mix": 220 }
+        },
+        {
+          "name": "Seafood Mushroom Soup",
+          "price": 220
+        },
+        {
+          "name": "Burnt Garlic Soup",
+          "price": 200
+        },
+        {
+          "name": "Wonton Hunan Soup",
+          "price": 200
+        },
+        {
+          "name": "Crispy Rice Soup",
+          "price": 200
+        },
+        {
+          "name": "Dumpling Soup",
+          "price": 200
+        },
+        {
+          "name": "Haocchi Special Soup",
+          "price": 200
+        }
+      ]
+    },
+
+    {
+      "name": "Veg Appetizers",
+      "type": "fixed",
+      "items": [
+        { "name": "Paneer | Mushroom | Babycorn (Choice of Sauce)", "price": 310 },
+        { "name": "Mix Veg Pepper Salt", "price": 299 },
+        { "name": "Crispy Schezwan Veg", "price": 290 },
+        { "name": "Cauliflower Manchurian", "price": 299 },
+        { "name": "Crispy Chilli Potato", "price": 299 },
+        { "name": "Crackling Spinach Babycorn", "price": 310 },
+        { "name": "Spicy Dragon Tofu", "price": 310 },
+        { "name": "Grilled Tofu", "price": 310 },
+        { "name": "Paneer Satay", "price": 320 },
+        { "name": "Lotus Stem", "price": 310 }
+      ]
+    },
+
+    {
+      "name": "Non-Veg Appetizers",
+      "type": "fixed",
+      "items": [
+        { "name": "Chicken Chiang Mai", "price": 349 },
+        { "name": "Chicken Lollipop", "price": 349 },
+        { "name": "Chicken Wings", "price": 349 },
+        { "name": "Thai Satay", "price": 359 },
+        { "name": "Malaysian Satay", "price": 359 },
+        { "name": "Haocchi Special Starter", "price": 349 },
+        { "name": "Dragon Chicken", "price": 349 },
+        { "name": "Chinese Fried Chicken", "price": 349 },
+        { "name": "Drums of Heaven", "price": 349 },
+        { "name": "Lemon Coriander Chicken", "price": 349 },
+        { "name": "Honey Crispy Chilli Chicken", "price": 349 },
+        { "name": "Celery Supreme Chicken", "price": 349 },
+        {
+          "name": "Fuyong",
+          "prices": { "veg": 269, "chicken": 275, "prawn": 279, "mix": 285 }
+        },
+        { "name": "Lemon Chicken", "price": 349 }
+      ]
+    },
+
+    {
+      "name": "Desserts",
+      "type": "fixed",
+      "items": [
+        { "name": "Cheese Cherry Pineapple", "price": 165 },
+        { "name": "Darsan with Ice Cream", "price": 175 }
+      ]
+    }
+  ]
 }

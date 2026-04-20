@@ -1,32 +1,4 @@
-import { Camera } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
-
-function ImageSlot({ label, size = '3/4', className = '' }) {
-  return (
-    <div
-      className={`relative overflow-hidden rounded-sm border border-gold/15
-                  bg-gradient-to-br from-ink-400 via-ink-300 to-ink-200
-                  flex items-center justify-center group ${className}`}
-      style={{ aspectRatio: size }}
-    >
-      {/* Watermark */}
-      <span className="absolute font-chinese text-[10rem] text-gold/5 select-none pointer-events-none leading-none">
-        龍
-      </span>
-      {/* Icon */}
-      <div className="relative z-10 flex flex-col items-center gap-2 opacity-40 group-hover:opacity-60 transition-opacity">
-        <Camera size={28} className="text-gold" />
-        <p className="text-gold text-[0.65rem] tracking-[0.2em] uppercase font-semibold text-center px-4">
-          {label}
-        </p>
-      </div>
-      {/* Shimmer on hover */}
-      <div className="absolute inset-0 bg-gold-shimmer bg-[length:200%_100%]
-                      opacity-0 group-hover:opacity-100 transition-opacity duration-500
-                      bg-no-repeat pointer-events-none" />
-    </div>
-  )
-}
 
 const STATS = [
   { value: '50+',   label: 'Dishes on menu' },
@@ -48,10 +20,24 @@ export default function About() {
             ref={imgRef}
             className={`relative ${imgInView ? 'inview-visible' : 'inview-hidden'}`}
           >
-            <ImageSlot label="Add Interior Photo Here" size="4/5" className="w-full" />
-            {/* Floating secondary image */}
-            <div className="absolute -bottom-8 -right-6 w-2/5 shadow-card">
-              <ImageSlot label="Add Food Photo Here" size="4/3" />
+            {/* Interior photo */}
+            <div className="w-full overflow-hidden rounded-sm border border-gold/15 shadow-card"
+                 style={{ aspectRatio: '4/5' }}>
+              <img
+                src="/Shop.png"
+                alt="The Dragon restaurant interior"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+            {/* Floating food photo */}
+            <div className="absolute -bottom-8 -right-6 w-2/5 overflow-hidden rounded-sm
+                            border-[3px] border-ink shadow-card">
+              <img
+                src="/dragon.png"
+                alt="Signature dish at The Dragon"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                style={{ aspectRatio: '4/3' }}
+              />
             </div>
             {/* Gold accent frame corner */}
             <div className="absolute -top-3 -left-3 w-12 h-12 border-l-2 border-t-2 border-gold/50 rounded-tl-sm" />
