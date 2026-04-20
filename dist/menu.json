@@ -1,0 +1,55 @@
+{
+  "Dim Sum & Starters": {
+    "Steamed Har Gow": 280,
+    "Siu Mai (Pork & Prawn)": 300,
+    "Crispy Spring Rolls": 220,
+    "Prawn Toast": 260,
+    "Salt & Pepper Squid": 320,
+    "Crispy Wontons": 200,
+    "Edamame with Sea Salt": 150,
+    "Chicken Satay Skewers": 280
+  },
+  "Soups": {
+    "Hot & Sour Soup": 180,
+    "Sweet Corn Chicken Soup": 180,
+    "Wonton Soup": 200,
+    "Tom Yum (Veg / Chicken / Prawn)": 220,
+    "Dragon Fire Broth": 250
+  },
+  "Wok Tossed Mains": {
+    "Kung Pao Chicken": 380,
+    "General Tso's Chicken": 380,
+    "Honey Chilli Chicken": 360,
+    "Szechuan Beef": 450,
+    "Dragon Style Prawn": 520,
+    "Crispy Tofu in Black Bean Sauce": 320,
+    "Mixed Vegetables in Oyster Sauce": 280,
+    "Mapo Tofu": 300
+  },
+  "Noodles & Rice": {
+    "Dragon Fried Rice": 280,
+    "Yangzhou Fried Rice": 300,
+    "Hakka Noodles (Veg / Chicken / Prawn)": 260,
+    "Chicken Chow Mein": 320,
+    "Singapore Rice Noodles": 340,
+    "Pad Thai": 360,
+    "Black Bean Garlic Noodles": 300
+  },
+  "Dim Sum Desserts": {
+    "Sesame Balls (3 pcs)": 180,
+    "Mango Pudding": 160,
+    "Egg Custard Tarts (2 pcs)": 140,
+    "Coconut Pandan Jelly": 140,
+    "Toffee Banana": 180
+  },
+  "Cocktails & Drinks": {
+    "Dragon's Breath Cocktail": 420,
+    "Lychee Martini": 380,
+    "Jasmine Iced Tea": 180,
+    "Mandarin Spritz": 400,
+    "House Wine (Glass)": 350,
+    "Craft Beer": 280,
+    "Fresh Lime Soda": 100,
+    "Iced Green Tea": 120
+  }
+}
