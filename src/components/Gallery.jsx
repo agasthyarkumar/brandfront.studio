@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { X, ZoomIn } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
+import { assetUrl } from '../utils/assetUrl'
 
 const SLOTS = [
-  { label: 'Main Dining Area',   src: '/maindining.png',   span: 'lg:col-span-2 lg:row-span-2', aspect: '16/9' },
-  { label: 'Dim Sum & Dishes',   src: '/dish1.png',         span: '',                             aspect: '1/1'  },
-  { label: 'Dragon Bar',         src: '/bar.png',           span: '',                             aspect: '1/1'  },
-  { label: 'Live Wok Station',   src: '/workstation.png',   span: 'lg:col-span-2',               aspect: '16/7' },
-  { label: 'Signature Dish',     src: '/dish2.png',         span: '',                             aspect: '1/1'  },
-  { label: 'Private Dining',     src: '/Private.png',       span: '',                             aspect: '1/1'  },
+  { label: 'Main Dining Area',   src: assetUrl('/maindining.png'),   span: 'lg:col-span-2 lg:row-span-2', aspect: '16/9' },
+  { label: 'Dim Sum & Dishes',   src: assetUrl('/dish1.png'),         span: '',                             aspect: '1/1'  },
+  { label: 'Dragon Bar',         src: assetUrl('/bar.png'),           span: '',                             aspect: '1/1'  },
+  { label: 'Live Wok Station',   src: assetUrl('/workstation.png'),   span: 'lg:col-span-2',               aspect: '16/7' },
+  { label: 'Signature Dish',     src: assetUrl('/dish2.png'),         span: '',                             aspect: '1/1'  },
+  { label: 'Private Dining',     src: assetUrl('/Private.png'),       span: '',                             aspect: '1/1'  },
 ]
 
 function GalleryItem({ label, src, aspect, index, onClick, inView, delay }) {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Loader2, AlertCircle, UtensilsCrossed } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
+import { assetUrl } from '../utils/assetUrl'
 
 const CATEGORY_ICONS = {
   'Noodles':            '🍜',
@@ -140,7 +141,7 @@ export default function Menu() {
   const [headerRef, headerInView] = useInView()
 
   useEffect(() => {
-    fetch('/menu.json')
+    fetch(assetUrl('/menu.json'))
       .then(r => { if (!r.ok) throw new Error(); return r.json() })
       .then(d  => { setData(d); setLoading(false) })
       .catch(() => { setError(true); setLoading(false) })
