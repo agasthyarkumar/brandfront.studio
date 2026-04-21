@@ -64,14 +64,16 @@ export default function Hero() {
           Authentic Chinese Cuisine &nbsp;·&nbsp; Jayanagar, Bengaluru
         </p>
 
-        {/* Dragon glyph */}
-        <div
-          className="font-chinese leading-none select-none mb-2 animate-fade-up-d1"
-          style={{ fontSize: 'clamp(7rem, 20vw, 14rem)', color: '#D4AF37' }}
-        >
-          <span className="inline-block animate-glow-pulse drop-shadow-[0_0_60px_rgba(212,175,55,0.5)]">
-            龍
-          </span>
+        {/* Logo */}
+        <div className="flex justify-center mb-4 animate-fade-up-d1">
+          <img
+            src="/logo.jpeg"
+            alt="The Dragon"
+            className="rounded-full object-cover object-center animate-glow-pulse
+                       ring-4 ring-gold/50
+                       shadow-[0_0_60px_rgba(212,175,55,0.4),0_0_120px_rgba(196,30,58,0.2)]"
+            style={{ width: 'clamp(140px, 22vw, 220px)', height: 'clamp(140px, 22vw, 220px)' }}
+          />
         </div>
 
         {/* Main heading */}

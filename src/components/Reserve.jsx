@@ -95,10 +95,6 @@ export default function Reserve({ showToast }) {
               </div>
             </div>
 
-            {/* Decorative glyph */}
-            <div className="mt-14 hidden lg:block">
-              <span className="font-chinese text-[10rem] text-gold/8 leading-none select-none">龍</span>
-            </div>
           </div>
 
           {/* ── Right: form ── */}

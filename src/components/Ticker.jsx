@@ -1,5 +1,5 @@
 const ITEMS = [
-  'The Dragon', '龍', 'Authentic Chinese', '·',
+  'The Dragon', '·', 'Authentic Chinese', '·',
   'Dim Sum', '·', 'Live Wok', '·', 'Dragon Bar', '·',
   'Jayanagar', '·', 'Private Dining', '·',
 ]

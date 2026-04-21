@@ -79,8 +79,7 @@ export default function Contact() {
             >
               {/* Placeholder — replace with <iframe src="..." /> for real map */}
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <span className="font-chinese text-[8rem] text-gold/5 select-none leading-none">龍</span>
-                <Camera size={28} className="text-gold/30" />
+    <Camera size={28} className="text-gold/30" />
                 <div className="text-center">
                   <p className="text-gold/50 text-[0.68rem] tracking-[0.2em] uppercase font-semibold">
                     Embed Google Maps Here

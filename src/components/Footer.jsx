@@ -14,11 +14,15 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="lg:col-span-1">
-          <a href="#" className="flex items-center gap-2.5 mb-4 group w-fit">
-            <span className="font-chinese text-3xl text-gold leading-none
-                             drop-shadow-[0_0_12px_rgba(212,175,55,0.4)]">
-              龍
-            </span>
+          <a href="#" className="flex items-center gap-3 mb-4 group w-fit">
+            <img
+              src="/logo.jpeg"
+              alt="The Dragon logo"
+              className="w-12 h-12 rounded-full object-cover object-center
+                         ring-2 ring-gold/30 group-hover:ring-gold/60
+                         shadow-[0_0_14px_rgba(212,175,55,0.3)]
+                         transition-all duration-300"
+            />
             <div className="flex flex-col leading-none">
               <span className="font-display text-sm font-bold tracking-[0.18em] text-cream uppercase">The Dragon</span>
               <span className="text-[0.58rem] tracking-[0.18em] text-gold/60 uppercase">Chinese Restaurant</span>

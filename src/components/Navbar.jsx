@@ -36,12 +36,16 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group" aria-label="The Dragon Home">
-            <span className="font-chinese text-3xl text-gold leading-none
-                             group-hover:animate-glow-pulse transition-all duration-300
-                             drop-shadow-[0_0_12px_rgba(212,175,55,0.5)]">
-              龍
-            </span>
+          <a href="#" className="flex items-center gap-3 group" aria-label="The Dragon Home">
+            <img
+              src="/logo.jpeg"
+              alt="The Dragon logo"
+              className="w-10 h-10 rounded-full object-cover object-center
+                         ring-2 ring-gold/40 group-hover:ring-gold/80
+                         shadow-[0_0_12px_rgba(212,175,55,0.35)]
+                         group-hover:shadow-[0_0_22px_rgba(212,175,55,0.6)]
+                         transition-all duration-300"
+            />
             <div className="flex flex-col leading-none">
               <span className="font-display text-base font-bold tracking-[0.18em] text-cream uppercase">
                 The Dragon
@@ -90,8 +94,13 @@ export default function Navbar() {
                     bg-ink/97 backdrop-blur-2xl transition-all duration-500
                     ${mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
       >
-        {/* Decorative */}
-        <span className="absolute font-chinese text-[22rem] text-gold/4 select-none pointer-events-none leading-none">龍</span>
+        {/* Decorative background logo */}
+        <img
+          src="/logo.jpeg"
+          alt=""
+          aria-hidden="true"
+          className="absolute w-72 h-72 rounded-full object-cover opacity-[0.04] select-none pointer-events-none"
+        />
 
         <nav className="flex flex-col items-center gap-8" aria-label="Mobile primary">
           {NAV_LINKS.map(({ href, label }) => (
