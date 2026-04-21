@@ -1,6 +1,6 @@
 import { MapPin, Clock, Phone, Instagram, Facebook, Star } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
-import { Camera } from 'lucide-react'
+import mapImage from './map.jpeg'
 
 export default function Contact() {
   const [ref, inView] = useInView()
@@ -72,23 +72,14 @@ export default function Contact() {
           {/* ── Map ── */}
           <div>
             <div
-              className="relative rounded-sm overflow-hidden border border-gold/15
-                         bg-gradient-to-br from-ink-400 to-ink-300
-                         shadow-card"
+              className="relative rounded-sm overflow-hidden border border-gold/15 shadow-card"
               style={{ aspectRatio: '4/3' }}
             >
-              {/* Placeholder — replace with <iframe src="..." /> for real map */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-    <Camera size={28} className="text-gold/30" />
-                <div className="text-center">
-                  <p className="text-gold/50 text-[0.68rem] tracking-[0.2em] uppercase font-semibold">
-                    Embed Google Maps Here
-                  </p>
-                  <p className="text-warm-muted text-[0.6rem] mt-1">
-                    Replace this div with a Google Maps iframe
-                  </p>
-                </div>
-              </div>
+              <img
+                src={mapImage}
+                alt="The Dragon location map"
+                className="w-full h-full object-cover"
+              />
               {/* Overlay CTA */}
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-ink/90 to-transparent">
                 <a

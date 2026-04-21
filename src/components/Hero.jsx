@@ -1,4 +1,5 @@
 import { ChevronDown } from 'lucide-react'
+import { assetUrl } from '../utils/assetUrl'
 
 const RINGS = [280, 440, 600, 760]
 const PARTICLES = [
@@ -67,7 +68,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="flex justify-center mb-4 animate-fade-up-d1">
           <img
-            src="/logo.jpeg"
+            src={assetUrl('/logo.jpeg')}
             alt="The Dragon"
             className="rounded-full object-cover object-center animate-glow-pulse
                        ring-4 ring-gold/50

@@ -1,4 +1,5 @@
 import { useInView } from '../hooks/useInView'
+import { assetUrl } from '../utils/assetUrl'
 
 const STATS = [
   { value: '50+',   label: 'Dishes on menu' },
@@ -24,7 +25,7 @@ export default function About() {
             <div className="w-full overflow-hidden rounded-sm border border-gold/15 shadow-card"
                  style={{ aspectRatio: '4/5' }}>
               <img
-                src="/Shop.png"
+                src={assetUrl('/Shop.png')}
                 alt="The Dragon restaurant interior"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -33,7 +34,7 @@ export default function About() {
             <div className="absolute -bottom-8 -right-6 w-2/5 overflow-hidden rounded-sm
                             border-[3px] border-ink shadow-card">
               <img
-                src="/dragon.png"
+                src={assetUrl('/dragon.png')}
                 alt="Signature dish at The Dragon"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 style={{ aspectRatio: '4/3' }}

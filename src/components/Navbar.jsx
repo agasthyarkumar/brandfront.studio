@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import { assetUrl } from '../utils/assetUrl'
 
 const NAV_LINKS = [
   { href: '#about',   label: 'Our Story' },
@@ -38,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group" aria-label="The Dragon Home">
             <img
-              src="/logo.jpeg"
+              src={assetUrl('/logo.jpeg')}
               alt="The Dragon logo"
               className="w-10 h-10 rounded-full object-cover object-center
                          ring-2 ring-gold/40 group-hover:ring-gold/80
@@ -96,7 +97,7 @@ export default function Navbar() {
       >
         {/* Decorative background logo */}
         <img
-          src="/logo.jpeg"
+          src={assetUrl('/logo.jpeg')}
           alt=""
           aria-hidden="true"
           className="absolute w-72 h-72 rounded-full object-cover opacity-[0.04] select-none pointer-events-none"

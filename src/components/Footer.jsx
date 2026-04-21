@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assetUrl'
+
 const NAV = [
   { href: '#about',   label: 'Our Story' },
   { href: '#menu',    label: 'Menu' },
@@ -16,7 +18,7 @@ export default function Footer() {
         <div className="lg:col-span-1">
           <a href="#" className="flex items-center gap-3 mb-4 group w-fit">
             <img
-              src="/logo.jpeg"
+              src={assetUrl('/logo.jpeg')}
               alt="The Dragon logo"
               className="w-12 h-12 rounded-full object-cover object-center
                          ring-2 ring-gold/30 group-hover:ring-gold/60
